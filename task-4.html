@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text">
+<button onclick="check()"> Check Balance </button>
+<h1 id="head"> </h1>
+<script>
+var user = document.querySelector('input');
+function check() {
+    var lessThan = 1;
+    var mediamThan = 10;
+
+  if(user.value < lessThan){
+   document.writeln("Moazziz Sarif, aap ka mojooda balance iss call k lye naa kaafi hai. Please re-charge karain");
+  }
+  if (user.value <  mediamThan) {
+ document.writeln("Moazziz sarif, aap ka balance khatam honay wala hai , and then prints Ring Ring!!")
+  }
+  if (user.value >  mediamThan) {
+ document.writeln("Ring Ring !!")
+  }
+  else {
+    document.getElementById("head").innerHTML="Ring Ring";
+  }
+}
+
+
+</script>
+
+
+
+</body>
+</html>

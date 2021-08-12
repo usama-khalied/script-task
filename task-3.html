@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button onclick="check()"> Check Score</button>
+<script>
+var user = document.querySelector('input');
+function check() {
+    var  oldScore = 45;
+    if(user.value > oldScore) {
+        document.writeln("Congratulation your new high score is " + user.value);
+    }
+    else {
+      document.writeln("Try Again. You just need the number  more points needed to beat the high score to win!");  
+    }
+}
+
+
+</script>
+
+
+</body>
+</html>

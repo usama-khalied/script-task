@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<input type="text">
+<button onclick="check()">  Check result </button>
+<script>
+    var user = document.querySelector('input');
+    function check() {
+marks = 50;
+
+        if(user.value < marks) {
+document.writeln("failed");
+
+        }
+        else {
+            document.writeln("CONGRATULATION YOU ARE PASSED");
+        }
+    }
+    /* sab sey pehley hummney ek variable bnaana hai  jis mai hum ney inout ko variable deyna hai 
+    pher hum ney ek variable bnaana hai function k ander he  us ka naam passMarks
+    us k bad hum ney ek   function banana hai aur pher if ki condition lagaani hai us k baad hum ney
+    passMarks < user.value likhnahai 
+    us k  baad hum ney document.writlen likh kr agar student k number zeyada huwey to hamey batana hai k aap pass  ho aur agar kam huwey to fail likh deynaa hai 
+    isi tarha hum ney else ki conditio  lagaaani hai us mai hum ney document.writlen likh kr marks likh deyna hai 
+    */
+    
+    
+    </script>
+
+
+
+</body>

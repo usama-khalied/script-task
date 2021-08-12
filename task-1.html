@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+<input type="number" placeholder="Speed">
+<button onclick="check()"> Check </button>
+
+<h1> facebook page</h1>
+<button onclick="login()">logout </button>
+<h2 id="head"> </h2>
+
+
+
+
+<script>
+
+
+/* sab sey pehley hamey ek variable banaana hai aur head ka naam deyna hai us ko html k h2 k  tag sey 
+krwaana hai 
+us k baad document.writle() ya pher documents.getelementbyId("head").innerHtml="yaha print krna hau ";
+us k baad hamey ek function bnaaana hai event onclick kaa wo btn ka naam login ho gaa  aur user jesey he us oer click kreayn gaa to 
+document.writlen("WElcome "Heollo); prin ho jaaye shurkriya
+
+/* sab sey pehley hamey input ki value ka variable banaana hai aur uska name rakhna hai
+pher hamey speed ka variable banaana hai like : var = 20;
+pher hamey ek function banaana hai us mai if lagaana hai if(user>20) {
+    document.writllen("speed slow plese")
+    else {
+        document.writlen("good driving")
+    }
+}
+*/
+var user = document.querySelector('input');
+function check() {
+var number = 60;
+
+if( user.value > number)
+ {
+    document.writeln("OverSpeed");
+}
+    
+ else {
+    document.writeln("good deiving");
+}
+}
+
+var head = document.getElementById("head").innerHTML="Welcome Usama";
+function login() {
+    document.writeln("PLease login to continue");
+    // return head;
+}
+</script>
+</body>
+</html>
